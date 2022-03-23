@@ -1,6 +1,13 @@
+<style>
+  p {
+    padding-left: 10px
+  }
+</style>
+
 <h1>All Songs</h1>
 
 <% @songs.each do |song| %>
-  <h2><%= song.title %></h2>
-  <p>Play Count:<%= song.play_count %></p>
+  <h3><%= song.title %></h3>
+  <p>Length: <%= song.length %> seconds</p>
+  <p>Play Count:<%= song.play_count %></p><br/>
 <% end %>
