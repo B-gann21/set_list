@@ -14,4 +14,7 @@ class ArtistsController < ApplicationController
   def artist_params
     params.permit(:name)
   end
+
+  def edit
+  end
 end
